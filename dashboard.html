@@ -1,181 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <script src="js/fontawsome.js"></script>
-    <link rel="stylesheet" href="css/dashboard.css" />
-    <style></style>
-  </head>
-  <body>
-    <div id="slidebar" class="sidebar ">
-      <div class="slidebar-cont">
-        <a href="/" class="logo-cont item-margin-top">
-          <div class="logo"></div>
-          <h3 class="logo-text">Blood Support</h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <script src="js/fontawsome.js"></script>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <style></style>
+</head>
+
+<body>
+  <div id="slidebar" class="sidebar">
+    <div class="slidebar-cont">
+      <a href="/" class="logo-cont item-margin-top">
+        <div class="logo"></div>
+        <h3 class="logo-text">Blood Support</h3>
+      </a>
+
+      <a href="/" class="profile-cont item-margin-top">
+        <div class="profile-img"></div>
+        <h3 class="profile-name">Jimam Tamimi</h3>
+      </a>
+
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link active">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Dashboard</p>
         </a>
+      </div>
 
-        <a href="/" class="profile-cont item-margin-top">
-          <div class="profile-img"></div>
-          <h3 class="profile-name">Jimam Tamimi</h3>
+      <div class="nav-item drop-down-nav-item">
+        <a onclick="showOptions()" class="nav-link parent-dropdown">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>My Requests</p>
+          <span class="nav-badge">3</span>
+          <i class="fas fa-angle-left dropdown-icon"></i>
         </a>
+        <a href="/dashboard.html" class="nav-link drop-down-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>A+ Blood Request 1</p>
+        </a>
+        <a href="/dashboard.html" class="nav-link drop-down-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>AB+ Blood Request 2</p>
+        </a>
+        <a href="/dashboard.html" class="nav-link drop-down-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>A- Blood Request 3</p>
+        </a>
+      </div>
 
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link active">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Dashboard</p>
-          </a>
-        </div>
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Help People</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Make A Request</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>On Going Requests</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Your Requests</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Your Donor Requests</p>
+        </a>
+      </div>
+      <p class="nav-header">Contact Options</p>
+      <hr />
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Messages</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Notifications</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Collections</p>
+        </a>
+      </div>
 
-        <div class="nav-item drop-down-nav-item">
-          <a onclick="showOptions()" class="nav-link parent-dropdown">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>My Requests</p>
-            <span class="nav-badge">3</span>
-            <i class="fas fa-angle-left dropdown-icon"></i>
-          </a>
-          <a href="/dashboard.html" class="nav-link drop-down-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>A+ Blood Request 1</p>
-          </a>
-          <a href="/dashboard.html" class="nav-link drop-down-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>AB+ Blood Request 2</p>
-          </a>
-          <a href="/dashboard.html" class="nav-link drop-down-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>A- Blood Request 3</p>
-          </a>
-        </div>
+      <p class="nav-header">Profile Options</p>
+      <hr />
 
+      <div class="nav-item">
+        <a href="/dashboard.html" class="nav-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>My Profile</p>
+        </a>
+      </div>
 
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Help People</p>
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Make A Request</p>
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>On Going Requests</p>
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Your Requests</p>
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Your Donor Requests</p>
-          </a>
-        </div>
-        <p class="nav-header">Contact Options</p>
-        <hr />
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Messages</p>
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Notifications</p>
-          </a>
-        </div>
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Collections</p>
-          </a>
-        </div>
+      <p class="nav-header">Settings</p>
+      <hr />
 
-        <p class="nav-header">Profile Options</p>
-        <hr />
-
-        <div class="nav-item">
-          <a href="/dashboard.html" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>My Profile</p>
-          </a>
-        </div>
-
-        <p class="nav-header">Settings</p>
-        <hr />
-
-                <div class="nav-item drop-down-nav-item">
-          <a onclick="showOptions()" class="nav-link parent-dropdown">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Settings</p>
-            <i class="fas fa-angle-left dropdown-icon"></i>
-          </a>
-          <a href="/dashboard.html" class="nav-link drop-down-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Help People</p>
-          </a>
-          <a href="/dashboard.html" class="nav-link drop-down-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Help People</p>
-          </a>
-          <a href="/dashboard.html" class="nav-link drop-down-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
-            <p>Help People</p>
-          </a>
-        </div>
-
-
+      <div class="nav-item drop-down-nav-item">
+        <a onclick="showOptions()" class="nav-link parent-dropdown">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Settings</p>
+          <i class="fas fa-angle-left dropdown-icon"></i>
+        </a>
+        <a href="/dashboard.html" class="nav-link drop-down-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Help People</p>
+        </a>
+        <a href="/dashboard.html" class="nav-link drop-down-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Help People</p>
+        </a>
+        <a href="/dashboard.html" class="nav-link drop-down-link">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>Help People</p>
+        </a>
       </div>
     </div>
+  </div>
 
-    <div id="content-wraper" class="content-wraper">
-      <div class="navbar-cont">
+  <div id="content-wraper" class="content-wraper">
+    <div class="navbar-cont">
+      <nav class="navbar">
+        <ul class="nav-item-wraper">
+          <li id="slidebar-icon" class="slidebar-toggler-wraper">
+            <i class="fas fa-bars slidebar-toggler" aria-hidden="true"></i>
+          </li>
+          <li>
+            <form class="search-box-wraper">
+              <input placeholder="Search" type="text" class="search-box" />
+              <button class="search-submit" type="submit">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </li>
+        </ul>
 
-        <nav class="navbar">
-            <ul class="nav-item-wraper">
-                <li id="slidebar-icon"  class=" slidebar-toggler-wraper"><i  class="fas fa-bars slidebar-toggler" aria-hidden="true"></i></li>
-                <li><form class="search-box-wraper" ><input placeholder="Search" type="text" class="search-box"> <button class="search-submit" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button></form></li>
-            </ul>
-
-            <ul class="right-nav-icons">
-                <li class="right-nav-icon-wraper"><i  class="fas fa-sign-out-alt" aria-hidden="true"></i></li>
-                <li id="message-icon" class="right-nav-icon-wraper"><i class="far fa-comment-dots"></i> <span class="badge">33</span> </li>
-                <div id="message-icon-dropdown" class="message-dropdown-cont hide-dropdown">
-                  <div class="message-dropdown"></div>
+        <ul class="right-nav-icons">
+          <li class="right-nav-icon-wraper">
+            <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+          </li>
+          <li id="message-icon" class="right-nav-icon-wraper">
+            <i class="far fa-comment-dots"></i> <span class="badge">33</span>
+          </li>
+          <div id="message-icon-dropdown" class="message-dropdown-cont hide-dropdown">
+            <div class="message-dropdown">
+              
+              <div class="message">
+                <div style="    background-image: url(https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);" class="messager-img"></div>
+                <div class="message-details">
+                  <h5 class="messager-name">Jimam tamimi</h5>
+                  <p class="message-text">A quick brown fox jumped... - <span>3 Hours</span></p>
                 </div>
-                <li id="notification-icon" class="right-nav-icon-wraper"><i class="far fa-bell"></i><span class="badge" style="left: 16.5px;">33</span> </li>
-                <div id="notification-icon-dropdown" class="message-dropdown-cont notification-dropdown-cont hide-dropdown">
-                  <div class="notification-dropdown"></div>
+                
+              </div>
+              
+              <div class="message">
+                <div style="    background-image: url(https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);" class="messager-img"></div>
+                <div class="message-details">
+                  <h5 class="messager-name">Jimam tamimi</h5>
+                  <p class="message-text">A quick brown fox jumped... - <span>3 Hours</span></p>
                 </div>
-                <li id="go-full-screen-icon" class="right-nav-icon-wraper"><i class="fas fa-expand-arrows-alt"></i></li>
-            </ul>
-        </nav>
-
-        
-      </div>
-
-      <div class="content">
-
-      </div>
-      <footer class="footer-cont">
-        <div class="footer">
-          <strong>Copyright © 2014-2020 <a class="footer-link" href="#">Blood Support</a>.</strong>
-        </div>
-      </footer>
+                
+              </div>
+              
+              <div class="message">
+                <div style="    background-image: url(https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);" class="messager-img"></div>
+                <div class="message-details">
+                  <h5 class="messager-name">Jimam tamimi</h5>
+                  <p class="message-text">A quick brown fox jumped... - <span>3 Hours</span></p>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          <li id="notification-icon" class="right-nav-icon-wraper">
+            <i class="far fa-bell"></i><span class="badge" style="left: 16.5px">33</span>
+          </li>
+          <div id="notification-icon-dropdown" class=" message-dropdown-cont notification-dropdown-cont hide-dropdown
+              ">
+            <div class="notification-dropdown">
+              <div class="notification">
+                <div style="    background-image: url(https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);" class="notification-img"></div>
+                <div class="notification-details">
+                  <h5 class="notification-name">Jimam tamimi</h5>
+                  <p class="notification-text">A quick brown fox jumped... - <span>3 Hours</span></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <li id="go-full-screen-icon" class="right-nav-icon-wraper">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </li>
+        </ul>
+      </nav>
     </div>
 
+    <div class="content"></div>
+    <footer class="footer-cont">
+      <div class="footer">
+        <strong>Copyright © 2014-2020
+          <a class="footer-link" href="#">Blood Support</a>.</strong>
+      </div>
+    </footer>
+  </div>
 
-    <script src="js/dashboard.js"></script>
-  </body>
+  <script src="js/dashboard.js"></script>
+</body>
+
 </html>
